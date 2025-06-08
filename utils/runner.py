@@ -181,7 +181,7 @@ class MCScanXRunner(Runner):
         else:
             Message.info("Blast file found, skipping...")
 
-        self._cmd = "MCScanX xyz/xyz"
+        self._cmd = "MCScanX xyz/xyz -u 25000"
         Message.info("\tRunning command: %s" % self._cmd)
         self.run()
 
